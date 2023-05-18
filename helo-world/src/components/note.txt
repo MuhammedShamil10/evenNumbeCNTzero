@@ -1,0 +1,19 @@
+Function--
+        *Aimple functions
+        *Use Function components as much as possible
+        *Absence of 'this' keyword
+        *Solution without using state
+        *Mainly responsible for the using
+        *Stateless/Dump/Presentational
+
+Class--
+    *More feature rich
+    *Maintain their own private data-state
+    *Complex UI logic
+    *Provide lifecycle hooks
+    *stateful/Smart/Container
+
+JSX-- javaScript XML(JSX)
+    -Extension to the JS language syntax
+    -JSX tags have a tag name,attributes, and children
+    -it makes your react code simpler and elegant

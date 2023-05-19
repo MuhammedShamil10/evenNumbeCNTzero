@@ -13,12 +13,24 @@ class App extends Component {
           <button>Take Dress</button>  
          </Greet>
         <Greet name="diana" heroName="wonder women"> </Greet>
-        <Welcome name="clark" heroName="super man"/>
+        <Welcome name="clark" heroName="King of Piretes"/>
         <Welcome name="diana" heroName="wonder women"/>
-        {/* <Hello /> */}
+        <Hello />
       </div>
     );
   }
 }
 
+class anotherApp extends Component {
+  render() {
+    return(
+      <div className='"anotherApp'>
+
+      </div>
+    )
+  }
+}
+
 export default App;
+
+export default anotherApp;

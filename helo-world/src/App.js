@@ -4,33 +4,28 @@ import './App.css';
 import Greet from './components/Greet'
 import Welcome from './components/Welcome';
 import Hello from './components/Helo'
+import Message from './components/Message';
+import Counter from './components/Counter';
 
 class App extends Component {
   render() {
     return(
       <div className="App">
-        <Greet name="clark" heroName="super man">
+        <Counter></Counter>
+        {/* <Message></Message> */}
+        {/* <Greet name="clark" heroName="super man">
           <button>Take Dress</button>  
          </Greet>
-        <Greet name="diana" heroName="wonder women"> </Greet>
-        <Welcome name="clark" heroName="King of Piretes"/>
-        <Welcome name="diana" heroName="wonder women"/>
-        <Hello />
+        <Greet name="diana" heroName="wonder women">
+          <h1>smaple</h1>
+           </Greet>
+           <Welcome name="diana" heroName="wonder women"/>
+           <Welcome name="luffy" heroName="drogen monkey"/>
+          <Hello /> */}
+          <Welcome name="Monkey D Luffy" heroName="King of Piretes"/>
       </div>
     );
   }
 }
 
-class anotherApp extends Component {
-  render() {
-    return(
-      <div className='"anotherApp'>
-
-      </div>
-    )
-  }
-}
-
 export default App;
-
-export default anotherApp;

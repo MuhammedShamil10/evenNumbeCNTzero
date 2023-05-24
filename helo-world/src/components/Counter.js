@@ -21,6 +21,7 @@ class Counter extends Component {
             count: prevState.count +1
         }))
         console.log(this.state.count);
+        
 
     }
 
@@ -39,5 +40,6 @@ class Counter extends Component {
     )
   }
 }
+
 
 export default Counter

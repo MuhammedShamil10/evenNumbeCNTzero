@@ -2,12 +2,12 @@ import React from 'react'
 
 function Person({person}) {
   return (
-    
-        <h2>
-            name is {person.name} {person.age} years old
-        </h2>
-    
+    <div>
+       <h2>
+        Ore va {person.name}. I am {person.age} years old. and i am the {person.skill}... so arigatho
+      </h2>
+    </div> 
   )
 }
 
-export default Person
+export default Person   

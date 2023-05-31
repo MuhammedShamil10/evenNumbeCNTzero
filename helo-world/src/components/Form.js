@@ -31,8 +31,8 @@ class Form extends Component {
       
         alert(`${this.state.username} ${this.state.comments} ${this.state.topic}`)
         event.preventDefault()    
-      
     }
+
 
   render() {
     return (
@@ -56,7 +56,7 @@ class Form extends Component {
         </div>
         <button type='submit'>Submit</button>
       </form>
-    )
+    )     
   }
 }
 

@@ -19,7 +19,16 @@ JSX-- javaScript XML(JSX)
     -it makes your react code simpler and elegant
 
 
-    Constructor(props) -- * A special function that will get called whenever a new component is created.
-                          * Initializing state Binding the event handlers
-                          * Do not cause side effects. Ex:HTTP requests
-                          * super(props) - Directly overwrite this.state
+Constructor(props) -- * A special function that will get called whenever a new component is created.
+                      * Initializing state Binding the event handlers
+                      * Do not cause side effects. Ex:HTTP requests
+                      * super(props) - Directly overwrite this.state
+
+
+Render() - only required method
+         - read props & state and return JSX
+
+
+Pure Component - a pure component implmements shouldComponentUpdate with a shallow prop and state comparison.
+         
+

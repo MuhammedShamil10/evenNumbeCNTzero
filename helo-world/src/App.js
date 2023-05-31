@@ -1,6 +1,14 @@
-import { Component } from 'react';
+import React, { Component} from 'react'
 // import logo from './logo.svg';
 import './App.css';
+import RefsDemo from './RefsDemo';
+import FocusInput from './FocusInput';
+// import Purecomponent from './Purecomponent';
+// import RegComp from './RegComp';
+// import ParentComp from './ParentComp';
+// import MemoComp from './MemoComp';
+// import FragmentDemo from './FragmentDemo';
+// import Table from './Table';
 // import Greet from './components/Greet'
 // import Welcome from './components/Welcome';
 // import Hello from './components/Helo'
@@ -14,18 +22,23 @@ import './App.css';
 // import UserGreeting from './UserGreeting';
 // import NameList from './NameList';
 // import Person from './Person';
-import StyleSheet from './StyleSheet';
-import Inline from './Inline';
-import './appStyle.css'
-import styles from './appStyle.module.css'
-import Form from './components/Form';
+// import StyleSheet from './StyleSheet';
+// import Inline from './Inline';
+// import './appStyle.css'
+// import styles from './appStyle.module.css'
+// import Form from './components/Form';
+// import LifeCycleA from './LifeCycleA';
+
+
+
 
 class App extends Component {
   render() {
     return(
       <div className="App">
-        <h1 className='error'>Error</h1>
-        <h1 className={styles.success}>Success</h1>
+        {/* <MemoComp></MemoComp> */}
+        {/* <h1 className='error'>Error</h1> */}
+        {/* <h1 className={styles.success}>Success</h1> */}
         {/* <Counter></Counter> */}
 
         {/* <Message></Message> */}
@@ -54,10 +67,16 @@ class App extends Component {
           {/* <UserGreeting></UserGreeting> */}
            {/* <NameList></NameList> */}
            {/* <Person></Person> */}
-           <StyleSheet primary={true}/>
-           <Inline/>
-           <Form></Form>
-        
+           {/* <StyleSheet primary={true}/> */}
+           {/* <Inline/> */}
+           {/* <Form></Form> */}
+           {/* <LifeCycleA/> */}
+           {/* <Table /> */}
+           {/* <FragmentDemo/> */}
+           {/* <RegComp/> */}
+           {/* <ParentComp/> */}
+           {/* <RefsDemo></RefsDemo> */}
+           <FocusInput />
       </div>
 
     );

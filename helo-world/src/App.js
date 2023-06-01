@@ -1,8 +1,17 @@
 import React, { Component} from 'react'
 // import logo from './logo.svg';
 import './App.css';
-import RefsDemo from './RefsDemo';
-import FocusInput from './FocusInput';
+// import ClickCounterTwo from './components/ClickCounterTwo';
+// import HoverCounterTwo from './components/HoverCounterTwo';
+// import User from './components/User';
+// import ClickCounter from './ClickCounter';
+// import HoverCounter from './components/HoverCounter';
+// import RefsDemo from './RefsDemo';
+// import FRParentInput from './FRParentInput';
+// import PortalDemo from './components/PortalDemo';
+// import Hero from './components/Hero';
+// import ErrorBoundary from './ErrorBoundary';
+// import FocusInput from './FocusInput';
 // import Purecomponent from './Purecomponent';
 // import RegComp from './RegComp';
 // import ParentComp from './ParentComp';
@@ -28,14 +37,13 @@ import FocusInput from './FocusInput';
 // import styles from './appStyle.module.css'
 // import Form from './components/Form';
 // import LifeCycleA from './LifeCycleA';
-
-
-
+import counter from './components/counter';
 
 class App extends Component {
   render() {
     return(
       <div className="App">
+
         {/* <MemoComp></MemoComp> */}
         {/* <h1 className='error'>Error</h1> */}
         {/* <h1 className={styles.success}>Success</h1> */}
@@ -76,8 +84,23 @@ class App extends Component {
            {/* <RegComp/> */}
            {/* <ParentComp/> */}
            {/* <RefsDemo></RefsDemo> */}
-           <FocusInput />
-      </div>
+           {/* <FocusInput /> */}
+           {/* <FRParentInput /> */}
+           {/* <PortalDemo /> */}
+           {/* <ErrorBoundary> */}
+           {/* <Hero herosName = "Batman"/> */}
+           {/* <Hero herosName = "Superman"/> */}
+           {/* <Hero herosName = "Joker"/> */}
+           {/* </ErrorBoundary> */}
+           {/* <ClickCounter name = 'luffy'/> */}
+           {/* <HoverCounter /> */}
+           {/* <ClickCounterTwo />
+           <HoverCounterTwo />
+           <User render={(isLoggedIn) => isLoggedIn ? 'luffy' : 'goku'}/> */}
+           
+           
+
+      </div> 
 
     );
   }

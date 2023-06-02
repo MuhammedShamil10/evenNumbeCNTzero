@@ -37,7 +37,9 @@ import './App.css';
 // import styles from './appStyle.module.css'
 // import Form from './components/Form';
 // import LifeCycleA from './LifeCycleA';
-import counter from './components/counter';
+// import counter from './components/counter';
+import ComponetC from './components/ComponetC';
+import { UserProvider } from './components/userContext';
 
 class App extends Component {
   render() {
@@ -97,7 +99,9 @@ class App extends Component {
            {/* <ClickCounterTwo />
            <HoverCounterTwo />
            <User render={(isLoggedIn) => isLoggedIn ? 'luffy' : 'goku'}/> */}
-           
+           <UserProvider value='zoro'>
+            <ComponetC />
+           </UserProvider>
            
 
       </div> 

@@ -30,5 +30,7 @@ Render() - only required method
 
 
 Pure Component - a pure component implmements shouldComponentUpdate with a shallow prop and state comparison.
+
+Context - context provides a way to pass data through the component three without having to pass props down manually at every level.
          
 

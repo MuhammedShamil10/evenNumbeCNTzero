@@ -18,6 +18,5 @@ class ClickCounterTwo extends Component {
       return <button onClick={this.increamentCount}>clicked {count}times</button>
   }
 
-}
-
+} 
 export default ClickCounterTwo

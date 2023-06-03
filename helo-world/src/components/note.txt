@@ -32,5 +32,8 @@ Render() - only required method
 Pure Component - a pure component implmements shouldComponentUpdate with a shallow prop and state comparison.
 
 Context - context provides a way to pass data through the component three without having to pass props down manually at every level.
-         
 
+Hooks - they allow you to use react features withput having to write a class      
+      - only call hooks at the top level
+
+                                                                                                                                                

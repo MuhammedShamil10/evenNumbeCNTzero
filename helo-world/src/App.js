@@ -1,6 +1,11 @@
 import React, { Component} from 'react'
 // import logo from './logo.svg';
 import './App.css';
+import HookCounterThree from './HookCounterThree';
+// import HookCounterTwo from './HookCounterTwo';
+// import HookCounter from './HookCounter';
+// import ClassCounter from './ClassCounter';
+// import PostForm from './PostForm';
 // import ClickCounterTwo from './components/ClickCounterTwo';
 // import HoverCounterTwo from './components/HoverCounterTwo';
 // import User from './components/User';
@@ -38,8 +43,9 @@ import './App.css';
 // import Form from './components/Form';
 // import LifeCycleA from './LifeCycleA';
 // import counter from './components/counter';
-import ComponetC from './components/ComponetC';
-import { UserProvider } from './components/userContext';
+// import ComponetC from './components/ComponetC';
+// import { UserProvider } from './components/userContext';
+// import PostList from './components/PostList';
 
 class App extends Component {
   render() {
@@ -99,10 +105,15 @@ class App extends Component {
            {/* <ClickCounterTwo />
            <HoverCounterTwo />
            <User render={(isLoggedIn) => isLoggedIn ? 'luffy' : 'goku'}/> */}
-           <UserProvider value='zoro'>
-            <ComponetC />
-           </UserProvider>
-           
+           {/* <UserProvider value='zoro'> */}
+            {/* <ComponetC /> */}
+           {/* </UserProvider> */}
+           {/* <PostList /> */}
+           {/* <PostForm /> */}
+           {/* <ClassCounter /> */}
+           {/* <HookCounter /> */}
+           {/* <HookCounterTwo /> */}
+           <HookCounterThree />
 
       </div> 
 

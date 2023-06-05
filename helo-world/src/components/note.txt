@@ -36,4 +36,9 @@ Context - context provides a way to pass data through the component three withou
 Hooks - they allow you to use react features withput having to write a class      
       - only call hooks at the top level
 
-                                                                                                                                                
+sueStateHook - the useState hook lets you add state to functional components
+             - in classes, the state is always an object
+             -with the useState hook, the state doesn't have to ba an object
+             -the first element is the current value of the state, and the second element is a state setter function.
+             
+          

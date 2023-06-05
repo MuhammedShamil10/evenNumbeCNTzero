@@ -1,7 +1,15 @@
 import React, { Component} from 'react'
 // import logo from './logo.svg';
 import './App.css';
-import HookCounterThree from './HookCounterThree';
+import ClassMouse from './ClassMouse';
+import IntervalClassCounter from './components/IntervalClassCounter';
+import IntervalHookCounter from './components/IntervalHookCounter';
+// import HookMouse from './HookMouse';
+// import MouseContainer from './MouseContainer';
+// import HookCounterfour from './HookCounterfour';
+// import HookCounterOne from './HookCounterOne';
+// import ClassCounterOne from './ClassCounterOne';
+// import HookCounterThree from './HookCounterThree';
 // import HookCounterTwo from './HookCounterTwo';
 // import HookCounter from './HookCounter';
 // import ClassCounter from './ClassCounter';
@@ -113,8 +121,15 @@ class App extends Component {
            {/* <ClassCounter /> */}
            {/* <HookCounter /> */}
            {/* <HookCounterTwo /> */}
-           <HookCounterThree />
-
+           {/* <HookCounterThree /> */}
+           {/* <HookCounterfour /> */}
+           {/* <HookCounterOne /> */}
+           {/* <ClassCounterOne /> */}
+           {/* <ClassMouse /> */}
+           {/* <HookMouse /> */}
+           {/* <MouseContainer /> */}
+           <IntervalClassCounter />
+           <IntervalHookCounter />
       </div> 
 
     );

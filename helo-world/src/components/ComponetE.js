@@ -1,18 +1,18 @@
-import React, { Component } from 'react'
+import React, {useContext} from 'react'
 import ComponentF from './ComponentF'
-import UserContext from './userContext'
+import { UserContext, ChannelContext } from '../App'
 
-class ComponetE extends Component {
-    static contextType = UserContext
-  render() {
-    return (
-        <div>
-            Componet E context {this.context}
-            <ComponentF />
-        </div>
-    )
-  }
+
+function ComponetE() {
+ const user = useContext(UserContext);
+ const channel = useContext(ChannelContext);
+
+  return (
+    <div>
+      {user}-{channel}
+    </div>
+  )
 }
-ComponetE.contextType = UserContext
+
 
 export default ComponetE

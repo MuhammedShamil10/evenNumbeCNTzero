@@ -41,4 +41,4 @@ sueStateHook - the useState hook lets you add state to functional components
              -with the useState hook, the state doesn't have to ba an object
              -the first element is the current value of the state, and the second element is a state setter function.
              
-          
+context - context provides a way to pass data through the company tree without having to pass props down manually at every level.       

@@ -1,9 +1,11 @@
 import React, { Component} from 'react'
 // import logo from './logo.svg';
 import './App.css';
-import ClassMouse from './ClassMouse';
-import IntervalClassCounter from './components/IntervalClassCounter';
-import IntervalHookCounter from './components/IntervalHookCounter';
+import ComponetC from './components/ComponetC';
+// import DataFetching from './components/DataFetching';
+// import ClassMouse from './ClassMouse';
+// import IntervalClassCounter from './components/IntervalClassCounter';
+// import IntervalHookCounter from './components/IntervalHookCounter';
 // import HookMouse from './HookMouse';
 // import MouseContainer from './MouseContainer';
 // import HookCounterfour from './HookCounterfour';
@@ -54,12 +56,30 @@ import IntervalHookCounter from './components/IntervalHookCounter';
 // import ComponetC from './components/ComponetC';
 // import { UserProvider } from './components/userContext';
 // import PostList from './components/PostList';
+export const UserContext = React.createContext()
+export const ChannelContext = React.createContext()
 
-class App extends Component {
-  render() {
-    return(
-      <div className="App">
+function App() {
+  return(
+    <div className='App'>
+      <UserContext.Provider value={'eren'}>
+        <ChannelContext.Provider value={'yeager'}>
+          <ComponetC />
+        </ChannelContext.Provider>
+      </UserContext.Provider>
+    </div>
+  )
+}
 
+// class App extends Component {
+//   render() {
+//     return(
+//       <div className="App">
+//         <UserContext.Provider value={'monkey D'}>
+//           <ChannelContext.Provider value={'luffy'}>
+//            <ComponetC />
+//           </ChannelContext.Provider>
+//         </UserContext.Provider>
         {/* <MemoComp></MemoComp> */}
         {/* <h1 className='error'>Error</h1> */}
         {/* <h1 className={styles.success}>Success</h1> */}
@@ -128,12 +148,13 @@ class App extends Component {
            {/* <ClassMouse /> */}
            {/* <HookMouse /> */}
            {/* <MouseContainer /> */}
-           <IntervalClassCounter />
-           <IntervalHookCounter />
-      </div> 
+           {/* <IntervalClassCounter /> */}
+           {/* <IntervalHookCounter /> */}
+           {/* <DataFetching /> */}
+      // </div> 
 
-    );
-  }
-}
+    // );
+  // }
+// }
 
 export default App;

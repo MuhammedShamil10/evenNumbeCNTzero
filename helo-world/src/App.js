@@ -1,7 +1,14 @@
-import React, { Component} from 'react'
+import React, {useReducer} from 'react'
 // import logo from './logo.svg';
 import './App.css';
-import ComponetC from './components/ComponetC';
+// import CounterThree from './components/CounterThree';
+import ComponentA from './components/ComponentA';
+import ComponentB from './components/ComponentB';
+import ComponentC from './components/ComponentC';
+import ComponentFf from './components/ComponentFf';
+// import CounterOne from './components/CounterOne';
+// import CounterTwo from './components/CounterTwo';
+// import ComponetC from './components/ComponetC';
 // import DataFetching from './components/DataFetching';
 // import ClassMouse from './ClassMouse';
 // import IntervalClassCounter from './components/IntervalClassCounter';
@@ -28,7 +35,7 @@ import ComponetC from './components/ComponetC';
 // import ErrorBoundary from './ErrorBoundary';
 // import FocusInput from './FocusInput';
 // import Purecomponent from './Purecomponent';
-// import RegComp from './RegComp';
+// import RegComp from './RegComp';  
 // import ParentComp from './ParentComp';
 // import MemoComp from './MemoComp';
 // import FragmentDemo from './FragmentDemo';
@@ -56,18 +63,46 @@ import ComponetC from './components/ComponetC';
 // import ComponetC from './components/ComponetC';
 // import { UserProvider } from './components/userContext';
 // import PostList from './components/PostList';
-export const UserContext = React.createContext()
-export const ChannelContext = React.createContext()
+// export const UserContext = React.createContext()
+// export const ChannelContext = React.createContext()
+
+export const CountContext = React.createContext()
+
+const initialState = 0
+const reducer = (state, action) => {
+    
+    switch(action) {
+     case 'increment':
+        return state + 1;
+     case 'decrement':
+        return state - 1;   
+     case 'reset':
+        return initialState;
+     default:
+        return state;
+    }
+}
 
 function App() {
+  const [count, dispatch] = useReducer(reducer, initialState)
   return(
+    <CountContext.Provider value={{countState: count, countDispatch: dispatch}}>
     <div className='App'>
-      <UserContext.Provider value={'eren'}>
+      Count - {count}
+      <ComponentA />
+      <ComponentB />
+      <ComponentFf />
+      {/* <CounterOne /> */}
+      {/* <CounterTwo /> */}
+      {/* <CounterThree /> */}
+      {/* <UserContext.Provider value={'eren'}>
         <ChannelContext.Provider value={'yeager'}>
           <ComponetC />
         </ChannelContext.Provider>
-      </UserContext.Provider>
+      </UserContext.Provider> */}
     </div>
+    </CountContext.Provider>
+
   )
 }
 

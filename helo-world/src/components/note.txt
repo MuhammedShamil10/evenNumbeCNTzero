@@ -41,4 +41,17 @@ sueStateHook - the useState hook lets you add state to functional components
              -with the useState hook, the state doesn't have to ba an object
              -the first element is the current value of the state, and the second element is a state setter function.
              
-context - context provides a way to pass data through the company tree without having to pass props down manually at every level.       
+context - context provides a way to pass data through the company tree without having to pass props down manually at every level. '
+
+useState - state
+useEffect - side effects
+userContext - context API
+useReducer - reducers
+
+useReducer - useReducer is a hook that is used for state management
+
+reduce in JS - array.reduce(reducer, initialValue)
+             - singleValue = reducer(accumulator ,itemValue)
+ 
+useReduce in React - useReducer(reducer, initialState)
+                   - newState = reducer(currentState, action )             

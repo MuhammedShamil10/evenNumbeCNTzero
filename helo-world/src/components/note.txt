@@ -54,4 +54,7 @@ reduce in JS - array.reduce(reducer, initialValue)
              - singleValue = reducer(accumulator ,itemValue)
  
 useReduce in React - useReducer(reducer, initialState)
-                   - newState = reducer(currentState, action )             
+                   - newState = reducer(currentState, action)
+
+useCallback Hook - useCallback is a hook that will return a memoized version of the callback function that only changes
+                   if one of the dependencies has changed                                

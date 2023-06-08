@@ -1,11 +1,22 @@
-import React, {useReducer} from 'react'
+import React from 'react'
 // import logo from './logo.svg';
 import './App.css';
+import ClassTimer from './components/ClassTimer';
+import HookTimer from './components/HookTimer';
+import DocTitleOne from './components/DocTitleOne';
+import DocTitleTwo from './components/DocTitleTwo';
+// import CounterMemo from './components/CounterMemo';
+// import FocusInput from './components/FocusInput';
+// import ParentComponent from './components/ParentComponent';
+// import Title from './components/Title';
+// import Count from './components/Count';
+// import DataFetchingTwo from './components/DataFetchingTwo';
+// import DataFetchingOne from './components/DataFetchingOne';
 // import CounterThree from './components/CounterThree';
-import ComponentA from './components/ComponentA';
-import ComponentB from './components/ComponentB';
-import ComponentC from './components/ComponentC';
-import ComponentFf from './components/ComponentFf';
+// import ComponentA from './components/ComponentA';
+// import ComponentB from './components/ComponentB';
+// import ComponentC from './components/ComponentC';
+// import ComponentFf from './components/ComponentFf';
 // import CounterOne from './components/CounterOne';
 // import CounterTwo from './components/CounterTwo';
 // import ComponetC from './components/ComponetC';
@@ -66,32 +77,40 @@ import ComponentFf from './components/ComponentFf';
 // export const UserContext = React.createContext()
 // export const ChannelContext = React.createContext()
 
-export const CountContext = React.createContext()
+// export const CountContext = React.createContext()
 
-const initialState = 0
-const reducer = (state, action) => {
+// const initialState = 0
+// const reducer = (state, action) => {
     
-    switch(action) {
-     case 'increment':
-        return state + 1;
-     case 'decrement':
-        return state - 1;   
-     case 'reset':
-        return initialState;
-     default:
-        return state;
-    }
-}
+//     switch(action) {
+//      case 'increment':
+//         return state + 1;
+//      case 'decrement':
+//         return state - 1;   
+//      case 'reset':
+//         return initialState;
+//      default:
+//         return state;
+//     }
+// }
 
 function App() {
-  const [count, dispatch] = useReducer(reducer, initialState)
+  // const [count, dispatch] = useReducer(reducer, initialState)
   return(
-    <CountContext.Provider value={{countState: count, countDispatch: dispatch}}>
+      // <CountContext.Provider value={{countState: count, countDispatch: dispatch}}>
     <div className='App'>
-      Count - {count}
-      <ComponentA />
-      <ComponentB />
-      <ComponentFf />
+      <DocTitleOne />
+      <DocTitleTwo />
+     {/* <ParentComponent /> */}
+     {/* <CounterMemo /> */}
+     {/* <FocusInput /> */}
+     {/* <ClassTimer /> */}
+     {/* <HookTimer /> */}
+      {/* <DataFetchingTwo /> */}
+      {/* Count - {count} */}
+      {/* <ComponentA /> */}
+      {/* <ComponentB /> */}
+      {/* <ComponentFf /> */}
       {/* <CounterOne /> */}
       {/* <CounterTwo /> */}
       {/* <CounterThree /> */}
@@ -100,8 +119,8 @@ function App() {
           <ComponetC />
         </ChannelContext.Provider>
       </UserContext.Provider> */}
+    {/* </CountContext.Provider> */}
     </div>
-    </CountContext.Provider>
 
   )
 }

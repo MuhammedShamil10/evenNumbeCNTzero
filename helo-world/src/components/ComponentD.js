@@ -9,7 +9,7 @@ function ComponentD() {
         <button onClick={() => countContext.countDispatch('increment')}>Increment</button>
         <button onClick={() => countContext.countDispatch('decrement')}>Decrement</button>
         <button onClick={() => countContext.countDispatch('reset')}>Reset</button>
-        <button>sample</button>
+        <button onClick={() =>clickHandler()}>sample</button>
     </div>
   )
 }

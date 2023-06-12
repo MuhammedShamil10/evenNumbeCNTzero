@@ -1,10 +1,18 @@
 import React from 'react'
 // import logo from './logo.svg';
 import './App.css';
-import ClassTimer from './components/ClassTimer';
-import HookTimer from './components/HookTimer';
-import DocTitleOne from './components/DocTitleOne';
-import DocTitleTwo from './components/DocTitleTwo';
+// import ClassTimer from './components/ClassTimer';
+// import HookTimer from './components/HookTimer';
+// import DocTitleOne from './components/DocTitleOne';
+// import DocTitleTwo from './components/DocTitleTwo';
+// import UserForm from './components/UserForm';
+import UseState from './components/UseState/UseState';
+import UseReducer from './components/UseReducer/UseReducer';
+import { ObjectUseState } from './components/Immutable State/ObjectUseState';
+import ArrayUseState from './components/Immutable State/ArrayUseState';
+import Parent from './components/Parent Child/Parent';
+import { ParentTwo } from './components/Optimization/ParentTwo';
+import { ParentThree } from './components/Optimization/ParentThree';
 // import CounterMemo from './components/CounterMemo';
 // import FocusInput from './components/FocusInput';
 // import ParentComponent from './components/ParentComponent';
@@ -99,8 +107,16 @@ function App() {
   return(
       // <CountContext.Provider value={{countState: count, countDispatch: dispatch}}>
     <div className='App'>
-      <DocTitleOne />
-      <DocTitleTwo />
+      {/* <UserForm /> */}
+      {/* <UseState /> */}
+      {/* <UseReducer /> */}
+      {/* <ObjectUseState /> */}
+      {/* <ArrayUseState /> */}
+      {/* <Parent /> */}
+      {/* <ParentTwo /> */}
+      <ParentThree />
+      {/* <DocTitleOne /> */}
+      {/* <DocTitleTwo /> */}
      {/* <ParentComponent /> */}
      {/* <CounterMemo /> */}
      {/* <FocusInput /> */}

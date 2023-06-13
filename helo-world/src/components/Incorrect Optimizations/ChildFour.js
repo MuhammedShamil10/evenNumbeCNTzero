@@ -9,6 +9,5 @@ export const ChildFour = ({ name }) => {
       {date.getSeconds()}
     </div>
   );
-};
-
+}; 
 export const MemoizedChildFour = React.memo(ChildFour);

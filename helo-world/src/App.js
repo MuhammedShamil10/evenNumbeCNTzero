@@ -13,6 +13,9 @@ import ArrayUseState from './components/Immutable State/ArrayUseState';
 import Parent from './components/Parent Child/Parent';
 import { ParentTwo } from './components/Optimization/ParentTwo';
 import { ParentThree } from './components/Optimization/ParentThree';
+import { ParentFour } from './components/Incorrect Optimizations/ParentFour';
+import { ContextParent } from './components/Context/ContextParent';
+import { ChildA } from './components/Context/ContextChild';
 // import CounterMemo from './components/CounterMemo';
 // import FocusInput from './components/FocusInput';
 // import ParentComponent from './components/ParentComponent';
@@ -108,13 +111,17 @@ function App() {
       // <CountContext.Provider value={{countState: count, countDispatch: dispatch}}>
     <div className='App'>
       {/* <UserForm /> */}
-      {/* <UseState /> */}
+      {/* <UseState /> */}   
       {/* <UseReducer /> */}
       {/* <ObjectUseState /> */}
       {/* <ArrayUseState /> */}
       {/* <Parent /> */}
       {/* <ParentTwo /> */}
-      <ParentThree />
+      {/* <ParentThree /> */}
+      {/* <ParentFour /> */}
+      <ContextParent>
+        <ChildA />
+      </ContextParent>
       {/* <DocTitleOne /> */}
       {/* <DocTitleTwo /> */}
      {/* <ParentComponent /> */}
